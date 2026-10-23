@@ -1,0 +1,162 @@
+/* ====== FUENTE GENERAL ====== */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background: #0b3d2e;
+  color: #ffffff;
+}
+
+/* ====== HEADER ====== */
+header, .header, .top {
+  text-align: center;
+  padding: 15px 10px;
+  background: linear-gradient(135deg, #0b3d2e, #145a32);
+  border-bottom: 3px solid #1db954;
+}
+
+header img {
+  max-width: 180px;
+  margin-bottom: 5px;
+}
+
+h1, h2 {
+  margin: 5px 0;
+}
+
+/* ====== CONTENEDOR PARTIDOS ====== */
+.partido, .match {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(255,255,255,0.05);
+  margin: 8px 5px;
+  padding: 10px;
+  border-radius: 12px;
+}
+
+/* ====== NOMBRE EQUIPOS ====== */
+.partido span,
+.match span {
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* ====== BOTONES L E V ====== */
+button {
+  border: none;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin: 0 2px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Local */
+button.local, button.l, .btn-l {
+  background: #1db954;
+  color: #fff;
+}
+
+/* Empate */
+button.empate, button.e, .btn-e {
+  background: #f1c40f;
+  color: #000;
+}
+
+/* Visita */
+button.visita, button.v, .btn-v {
+  background: #e74c3c;
+  color: #fff;
+}
+
+/* ====== INPUTS ====== */
+input[type="text"],
+input[type="tel"] {
+  width: 95%;
+  margin: 8px auto;
+  display: block;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+}
+
+/* ====== BOTONES ACCIÓN ====== */
+.acciones button {
+  width: 48%;
+  margin: 5px 1%;
+  background: #145a32;
+  color: #fff;
+}
+
+.acciones button:hover {
+  background: #1db954;
+}
+
+/* ====== BOTÓN WHATSAPP ====== */
+.whatsapp,
+.btn-whatsapp {
+  width: 95%;
+  margin: 15px auto;
+  display: block;
+  background: #25D366;
+  color: #fff;
+  font-size: 18px;
+  padding: 14px;
+  border-radius: 14px;
+  font-weight: bold;
+}
+
+/* ====== TOTALES ====== */
+.totales {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.totales div {
+  background: rgba(255,255,255,0.08);
+  padding: 12px;
+  border-radius: 12px;
+  width: 45%;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* ====== TABLA ====== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+  font-size: 13px;
+}
+
+th {
+  background: #145a32;
+  padding: 8px;
+}
+
+td {
+  padding: 6px;
+  text-align: center;
+  border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* ====== RESPONSIVE ====== */
+@media (max-width: 480px) {
+  header img {
+    max-width: 150px;
+  }
+
+  .partido span {
+    font-size: 14px;
+  }
+
+  button {
+    padding: 6px 8px;
+  }
+}
